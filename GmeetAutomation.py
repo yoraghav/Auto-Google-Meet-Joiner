@@ -76,13 +76,11 @@ opt.add_experimental_option("prefs", {
 })
 driver = webdriver.Chrome(options=opt)
  
-# login to Google account
 Glogin(mail_address, password)
- 
-# go to google meet
-driver.get('https://meet.google.com/nfk-ykaj-dqs')
+
+driver.get('https://meet.google.com/yourgmeetid')
 turnOffMicCam()
-# AskToJoin()
+
 joinNow()
 
 time.sleep(3600)
